@@ -18,8 +18,8 @@ const createDate = (date, index) => {
     const sort = arr.sort((a,b) => a - b);
     return sort.join('-')
   } else {
-    const sort = arr.sort((a,b) => a + b)
-    return sort.join('-')
+    arr.sort((a,b) => a + b)
+    return arr[index]
   }
 };
 
